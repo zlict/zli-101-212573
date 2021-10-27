@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 0.5em;
+        border: 1px solid blue;
+      }
+
+      tr:hover {
+        background-color: #ccc;
+      }
+
+      .good-grade {
+        color: green;
+      }
+
+      #average tr {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Vorname</th>
+          <th>Nachname</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Andrin</td>
+          <td>Bickel</td>
+          <td class="good-grade">6</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Chuck</td>
+          <td rowspan="2">Norris</td>
+          <td class="good-grade">7</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Bill</td>
+          <td>5</td>
+        </tr>
+      </tbody>
+      <tfoot id="average">
+        <tr>
+          <td colspan="3" style="text-align: right">Durchschnittsnote</td>
+          <td>6</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
