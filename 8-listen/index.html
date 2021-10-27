@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ol {
+        counter-reset: item;
+      }
+      ol li {
+        display: block;
+      }
+      ol li:before {
+        content: counters(item, ".") " ";
+        counter-increment: item;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <!-- UL steht für unordered list -->
+      <li>Mehl</li>
+      <!-- LI steht für list item -->
+      <li>Wasser</li>
+      <li>Tomaten</li>
+      <li>Mozzarella</li>
+    </ul>
+    <ol>
+      <!-- OL steht für ordered list -->
+      <li>Ofen vorheitzen</li>
+      <li>Plastik entfernen</li>
+      <li>Backen</li>
+      <li>Geniessen</li>
+    </ol>
+    <dl>
+      <!-- DL steht für definition list -->
+      <dt>Mehl</dt>
+      <dd>Gemahlene Weizenkörner</dd>
+      <dt>Tomaten</dt>
+      <dd>Runde, rote, wässrige Gemüse</dd>
+    </dl>
+
+    <ol>
+      <!-- OL steht für ordered list -->
+      <li>Ofen vorheitzen</li>
+      <li>Plastik entfernen</li>
+      <li>
+        Backen
+        <ol>
+          <li>Backofentüre öffnen</li>
+          <li>Blech mit Pizza hineinschieben</li>
+          <li>Backofentüre schliessen</li>
+        </ol>
+      </li>
+      <li>Geniessen</li>
+    </ol>
+  </body>
+</html>
