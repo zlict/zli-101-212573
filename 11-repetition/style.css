@@ -1,0 +1,5 @@
+@import url(another.css);
+
+body {
+  background: linear-gradient(to bottom, #000, #fff);
+}
