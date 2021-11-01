@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        min-height: 100%;
+      }
+
+      header,
+      footer {
+        background-color: #ddd;
+        padding: 0 1em;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+      }
+
+      main {
+        flex-grow: 1;
+      }
+
+      footer {
+        height: 70px;
+      }
+
+      #logo {
+        width: 200px;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav ul li {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo.svg" id="logo" alt="Logo der Webseite" />
+      <nav>
+        <ul>
+          <li>Produkte</li>
+          <li>Dienstleistungen</li>
+          <li>Über uns</li>
+        </ul>
+      </nav>
+    </header>
+    <main>Hauptteil</main>
+    <footer>Fusszeile</footer>
+  </body>
+</html>
