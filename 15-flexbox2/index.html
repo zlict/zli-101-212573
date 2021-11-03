@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        height: 100%;
+      }
+
+      header,
+      footer {
+        background-color: rgb(217, 251, 207);
+      }
+
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+      }
+
+      header {
+        height: 50px;
+      }
+
+      main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 1;
+      }
+
+      main div {
+        height: 50px;
+        width: 50px;
+      }
+
+      main div:nth-child(1) {
+        background-color: blue;
+      }
+
+      main div:nth-child(2) {
+        background-color: red;
+        order: -1;
+      }
+
+      main div:nth-child(3) {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Kopf</header>
+    <main>
+      <div>Box1</div>
+      <div>Box2</div>
+      <div>Box3</div>
+    </main>
+    <footer>Fuss</footer>
+  </body>
+</html>
